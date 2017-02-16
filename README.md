@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mbergin/asx24itch.svg?branch=master)](https://travis-ci.org/mbergin/asx24itch)
+
 asx24itch is a C++ parser for [ASX 24](http://www.asx.com.au/services/trading-services/asx-trade24.htm) ITCH messages.
 
 It implements the [ASX 24 ITCH Message Specification version 1.13]
