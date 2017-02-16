@@ -1,6 +1,10 @@
 language: cpp
 script: make && ./example
-compiler: 
-    - clang
-    - gcc
-
+matrix:
+    include:
+        - compiler: gcc
+          addons:
+            apt:
+                packages:
+                    - g++-5
+          env: CXX=g++-5
