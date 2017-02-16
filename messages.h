@@ -447,35 +447,35 @@ namespace asx24itch
 
 // If these asserts fire, the compiler probably doesn't regognise #pragma pack
 // and you will need to provide a replacement to ensure there is no padding.
-static_assert(sizeof TimeMessage == 5, "TimeMessage struct packing incorrect");
-static_assert(sizeof SystemEvent == 8, "SystemEvent struct packing incorrect");
-static_assert(sizeof FutureSymbolDirectory == 54, "FutureSymbolDirectory struct packing incorrect");
-static_assert(sizeof SpreadSymbolDirectory == 35, "SpreadSymbolDirectory struct packing incorrect");
-static_assert(sizeof OptionSymbolDirectory == 75, "OptionSymbolDirectory struct packing incorrect");
-static_assert(sizeof OrderBookState == 12, "OrderBookState struct packing incorrect");
-static_assert(sizeof OrderAdded == 32, "OrderAdded struct packing incorrect");
-static_assert(sizeof OrderReplaced == 32, "OrderReplaced struct packing incorrect");
-static_assert(sizeof OrderVolumeCancelled == 24, "OrderVolumeCancelled struct packing incorrect");
-static_assert(sizeof OrderDeleted == 20, "OrderDeleted struct packing incorrect");
-static_assert(sizeof ImpliedOrderAdded == 32, "ImpliedOrderAdded struct packing incorrect");
-static_assert(sizeof ImpliedOrderReplaced == 32, "ImpliedOrderReplaced struct packing incorrect");
-static_assert(sizeof ImpliedOrderDeleted == 20, "ImpliedOrderDeleted struct packing incorrect");
-static_assert(sizeof CustomMarketOrderAdded == 90, "CustomMarketOrderAdded struct packing incorrect");
-static_assert(sizeof CustomMarketOrderReplaced == 23, "CustomMarketOrderReplaced struct packing incorrect");
-static_assert(sizeof CustomMarketOrderDeleted == 15, "CustomMarketOrderDeleted struct packing incorrect");
-static_assert(sizeof OrderExecuted == 37, "OrderExecuted struct packing incorrect");
-static_assert(sizeof OrderExecutedWithPrice == 48, "OrderExecutedWithPrice struct packing incorrect");
-static_assert(sizeof SpreadExecuted == 47, "SpreadExecuted struct packing incorrect");
-static_assert(sizeof Trade == 63, "Trade struct packing incorrect");
-static_assert(sizeof CustomMarketExecuted == 38, "CustomMarketExecuted struct packing incorrect");
-static_assert(sizeof CustomMarketTrade == 55, "CustomMarketTrade struct packing incorrect");
-static_assert(sizeof TradeCancellation == 11, "TradeCancellation struct packing incorrect");
-static_assert(sizeof EquilibriumPrice == 31, "EquilibriumPrice struct packing incorrect");
-static_assert(sizeof OpenHighLowLastTradeAdjustment == 40, "OpenHighLowLastTradeAdjustment struct packing incorrect");
-static_assert(sizeof MarketSettlement == 20, "MarketSettlement struct packing incorrect");
-static_assert(sizeof TextMessage == 113, "TextMessage struct packing incorrect");
-static_assert(sizeof RequestForQuote == 19, "RequestForQuote struct packing incorrect");
-static_assert(sizeof AnomalousOrderThresholdPublish == 35, "AnomalousOrderThresholdPublish struct packing incorrect");
-static_assert(sizeof VolumeAndOpenInterest == 21, "VolumeAndOpenInterest struct packing incorrect");
+static_assert(sizeof(TimeMessage) == 5, "TimeMessage struct packing incorrect");
+static_assert(sizeof(SystemEvent) == 8, "SystemEvent struct packing incorrect");
+static_assert(sizeof(FutureSymbolDirectory) == 54, "FutureSymbolDirectory struct packing incorrect");
+static_assert(sizeof(SpreadSymbolDirectory) == 35, "SpreadSymbolDirectory struct packing incorrect");
+static_assert(sizeof(OptionSymbolDirectory) == 75, "OptionSymbolDirectory struct packing incorrect");
+static_assert(sizeof(OrderBookState) == 12, "OrderBookState struct packing incorrect");
+static_assert(sizeof(OrderAdded) == 32, "OrderAdded struct packing incorrect");
+static_assert(sizeof(OrderReplaced) == 32, "OrderReplaced struct packing incorrect");
+static_assert(sizeof(OrderVolumeCancelled) == 24, "OrderVolumeCancelled struct packing incorrect");
+static_assert(sizeof(OrderDeleted) == 20, "OrderDeleted struct packing incorrect");
+static_assert(sizeof(ImpliedOrderAdded) == 32, "ImpliedOrderAdded struct packing incorrect");
+static_assert(sizeof(ImpliedOrderReplaced) == 32, "ImpliedOrderReplaced struct packing incorrect");
+static_assert(sizeof(ImpliedOrderDeleted) == 20, "ImpliedOrderDeleted struct packing incorrect");
+static_assert(sizeof(CustomMarketOrderAdded) == 90, "CustomMarketOrderAdded struct packing incorrect");
+static_assert(sizeof(CustomMarketOrderReplaced) == 23, "CustomMarketOrderReplaced struct packing incorrect");
+static_assert(sizeof(CustomMarketOrderDeleted) == 15, "CustomMarketOrderDeleted struct packing incorrect");
+static_assert(sizeof(OrderExecuted) == 37, "OrderExecuted struct packing incorrect");
+static_assert(sizeof(OrderExecutedWithPrice) == 48, "OrderExecutedWithPrice struct packing incorrect");
+static_assert(sizeof(SpreadExecuted) == 47, "SpreadExecuted struct packing incorrect");
+static_assert(sizeof(Trade) == 63, "Trade struct packing incorrect");
+static_assert(sizeof(CustomMarketExecuted) == 38, "CustomMarketExecuted struct packing incorrect");
+static_assert(sizeof(CustomMarketTrade) == 55, "CustomMarketTrade struct packing incorrect");
+static_assert(sizeof(TradeCancellation) == 11, "TradeCancellation struct packing incorrect");
+static_assert(sizeof(EquilibriumPrice) == 31, "EquilibriumPrice struct packing incorrect");
+static_assert(sizeof(OpenHighLowLastTradeAdjustment) == 40, "OpenHighLowLastTradeAdjustment struct packing incorrect");
+static_assert(sizeof(MarketSettlement) == 20, "MarketSettlement struct packing incorrect");
+static_assert(sizeof(TextMessage) == 113, "TextMessage struct packing incorrect");
+static_assert(sizeof(RequestForQuote) == 19, "RequestForQuote struct packing incorrect");
+static_assert(sizeof(AnomalousOrderThresholdPublish) == 35, "AnomalousOrderThresholdPublish struct packing incorrect");
+static_assert(sizeof(VolumeAndOpenInterest) == 21, "VolumeAndOpenInterest struct packing incorrect");
 
 }

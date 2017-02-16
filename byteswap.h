@@ -8,7 +8,7 @@ namespace asx24itch {
     template<typename T>
     void network_to_host(T&)
     {
-        static_assert(sizeof T != sizeof T , "must be specialised");
+        static_assert(sizeof(T) != sizeof(T), "must be specialised");
     }
 
     template <>

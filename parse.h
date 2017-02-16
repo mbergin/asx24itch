@@ -24,11 +24,11 @@ namespace asx24itch
     template<typename MsgType, typename Handler>
     ParseStatus parseAs(const char* buf, size_t len, Handler&& handler)
     {
-        if (len < sizeof MsgType)
+        if (len < sizeof(MsgType))
             return ParseStatus::Truncated;
         MsgType msg{*reinterpret_cast<const MsgType*>(buf)};
         network_to_host(msg);
-        std::invoke(std::forward<Handler>(handler), msg);
+        handler(msg);
         return ParseStatus::OK;
     }
 
