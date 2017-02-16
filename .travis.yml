@@ -9,4 +9,4 @@ matrix:
                     - ubuntu-toolchain-r-test
                 packages:
                     - g++-5
-          env: CXX=g++-5
+          env: COMPILER=g++-5
