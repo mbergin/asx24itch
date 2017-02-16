@@ -3,6 +3,15 @@
 #include "parse.h"
 #include "dump.h"
 
+struct Printer
+{
+    template<class Msg>
+    void operator()(const Msg& msg) const
+    {
+        std::cout << msg;
+    }
+};
+
 int main()
 {
     // An "Order Added" message
@@ -19,9 +28,6 @@ int main()
     };
 
     // Parse and print out a human-readable version of the message
-    auto status = asx24itch::parse(msg, sizeof msg, [](const auto& msg)
-    {
-        std::cout << msg << std::endl;
-    });
+    auto status = asx24itch::parse(msg, sizeof msg, Printer());
     return status == asx24itch::ParseStatus::OK ? 0 : 1;
 }
