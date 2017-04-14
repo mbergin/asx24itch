@@ -2,8 +2,7 @@
 
 asx24itch is a C++ parser for [ASX 24](http://www.asx.com.au/services/trading-services/asx-trade24.htm) ITCH messages.
 
-It implements the [ASX 24 ITCH Message Specification version 1.13]
-(http://www.asx.com.au/documents/trading_services/T24ITCH_External_Message_Specification_V1.13.pdf).
+It implements the [ASX 24 ITCH Message Specification version 1.13](http://www.asx.com.au/documents/trading_services/T24ITCH_External_Message_Specification_V1.13.pdf).
 
 Here is [a basic example](example.cpp).
 
